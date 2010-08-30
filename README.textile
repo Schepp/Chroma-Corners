@@ -14,7 +14,7 @@ You can use this solution for all borderless rounded elements and for bordered e
 
 This is how you use "Chroma Corners":
 
-.borderradius {
+bc. .borderradius {
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
   border-radius: *14px*;
@@ -23,7 +23,7 @@ This is how you use "Chroma Corners":
 
 or:
 
-.borderradius {
+bc. .borderradius {
   -moz-border-radius: 14px 4px;
   -webkit-border-radius: 14px 4px;
   border-radius: *14px 4px*;
@@ -32,7 +32,7 @@ or:
 
 or:
 
-.borderradius {
+bc. .borderradius {
   -moz-border-radius: 14px 4px 14px 4px;
   -webkit-border-radius: 14px 4px 14px 4px;
   border-radius: *14px 4px 14px 4px*;
@@ -41,7 +41,7 @@ or:
 
 or:
 
-.borderradius {
+bc. .borderradius {
   -moz-border-top-left-radius: 14px;
   -webkit-border-top-left-radius: 14px;
   border-*top-left*-radius: 14px;
@@ -50,7 +50,7 @@ or:
 
 or:
 
-.borderradius {
+bc. .borderradius {
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
   border-radius: 14px;
