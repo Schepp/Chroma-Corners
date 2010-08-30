@@ -58,7 +58,7 @@ bc. .borderradius {
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
-_*Important:* Please note that you need to set the url of the behavior *not* relative to the stylesheet but relative to the HTML-document. The best thing is to use an absolute path like behavior: url(/css/chromacorners/chromacorners.htc)._ 
+_*Important:* Please note that you need to set the url of the behavior *not* relative to the stylesheet but relative to the HTML-document. The best thing is to use an absolute path e.g.: *behavior: url(/css/chromacorners/chromacorners.htc);*._ 
 
 
 h1. Caveats
