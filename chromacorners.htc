@@ -3,26 +3,15 @@
 //<![CDATA[
 
 /* 
- * Helper function, taken from Dean Edward's IE7 framework,
- * added by Schepp on 12.06.2010.
+ * Copyright (C) 2010 Christian "Schepp" Schaefer
+ * http://twitter.com/derSchepp
+ * Licensed under GNU LGPL 3, see license.txt or http://www.gnu.org/licenses/
+ */
+
+/* 
+ * Helper function, taken from Dean Edward's IE7 framework
  * http://code.google.com/p/ie7-js/
  * MIT License (http://www.opensource.org/licenses/mit-license.php)
- *
- * Allows us to convert from relative to pixel-values.
- *
- * Citing Dean himself:
- * "MSIE67+ has special pixelLeft/Width/Height etc properties. 
- * They represent the current pixel value of the equivalent style setting. 
- * So, if you have style.width=8em then style.pixelWidth would return the 
- * pixel equivalent. MSIE also supports an override style called runtimeStyle. 
- * Setting properties on runtimeStyle overrides all other style properties.
- *
- * This trick works by setting style.left and then getting MSIE to convert 
- * it by calling style.pixelLeft. To stop the element moving around the screen 
- * when we do this, we set runtimeStyle.left with the current left value. 
- * After we’ve done the conversion we set everything back to the way it was.
- *
- * http://ajaxian.com/archives/computed-vs-cascaded-style
  */
 function getPixelValue(value){
 	var PIXEL = /^\d+(px)?$/i;
