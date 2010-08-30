@@ -17,7 +17,7 @@ This is how you use "Chroma Corners":
 bc. .borderradius {
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
-  border-radius: *14px*;
+  border-radius: 14px;
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
@@ -26,7 +26,7 @@ or:
 bc. .borderradius {
   -moz-border-radius: 14px 4px;
   -webkit-border-radius: 14px 4px;
-  border-radius: *14px 4px*;
+  border-radius: 14px 4px;
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
@@ -35,7 +35,7 @@ or:
 bc. .borderradius {
   -moz-border-radius: 14px 4px 14px 4px;
   -webkit-border-radius: 14px 4px 14px 4px;
-  border-radius: *14px 4px 14px 4px*;
+  border-radius: 14px 4px 14px 4px;
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
@@ -44,7 +44,7 @@ or:
 bc. .borderradius {
   -moz-border-top-left-radius: 14px;
   -webkit-border-top-left-radius: 14px;
-  border-*top-left*-radius: 14px;
+  border-top-left-radius: 14px;
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
@@ -54,7 +54,7 @@ bc. .borderradius {
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
   border-radius: 14px;
-  *border: black 1px solid;*
+  border: black 1px solid;
   behavior: url(chromacorners.htc); /* relative path from HTML-file! */
 }
 
