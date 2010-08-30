@@ -1,0 +1,86 @@
+Copyright (C) 2010 Christian "Schepp" Schaefer
+"http://twitter.com/derSchepp":http://twitter.com/derSchepp
+
+
+
+h1. About "Chroma Corners"
+
+"Chroma Corner" is the name of a new technique to create rounded corners in IE 6 - 8. It uses IE's chroma-filter as a tool to mask away corner areas, which are created as a graphic and which are filled with a solid color. 
+It is and behaves like standard HTML + CSS as opposed to the newer VML-based approches. It gives you more freeness and needs less photoshopping work than older background image based techniques for rounded corners like "Mountain Top" or "Sliding Doors".
+
+h1. Usage
+
+You can use this solution for all borderless rounded elements and for bordered elements with a solid border-style in one single border-color.
+
+This is how you use "Chroma Corners":
+
+.borderradius {
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: *14px*;
+  behavior: url(chromacorners.htc); /* relative path from HTML-file! */
+}
+
+or:
+
+.borderradius {
+  -moz-border-radius: 14px 4px;
+  -webkit-border-radius: 14px 4px;
+  border-radius: *14px 4px*;
+  behavior: url(chromacorners.htc); /* relative path from HTML-file! */
+}
+
+or:
+
+.borderradius {
+  -moz-border-radius: 14px 4px 14px 4px;
+  -webkit-border-radius: 14px 4px 14px 4px;
+  border-radius: *14px 4px 14px 4px*;
+  behavior: url(chromacorners.htc); /* relative path from HTML-file! */
+}
+
+or:
+
+.borderradius {
+  -moz-border-top-left-radius: 14px;
+  -webkit-border-top-left-radius: 14px;
+  border-*top-left*-radius: 14px;
+  behavior: url(chromacorners.htc); /* relative path from HTML-file! */
+}
+
+or:
+
+.borderradius {
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  *border: black 1px solid;*
+  behavior: url(chromacorners.htc); /* relative path from HTML-file! */
+}
+
+_*Important:* Please note that you need to set the url of the behavior *not* relative to the stylesheet but relative to the HTML-document. The best thing is to use an absolute path like behavior: url(/css/chromacorners/chromacorners.htc)._ 
+
+
+h1. Caveats
+
+In order for this technique to work, the behavior will apply _position: relative;_ to the to be rounded element. Keep that in mind when absolutely positioning children of the rounded one. 
+
+If you use solid borders on your element, the element will be set to a fixed width. This width is exactly the width it has when the behavior kicks in. So if you have a fluid layout the width won't adapt to changes in layout.
+
+_*Note:* This is planned to get fixed in a future version._
+
+
+h1. System Requirements
+
+Your webspace must be running PHP 5 (no PHP 4, we are in 2010!) and GDLib v2 extension must enabled.
+
+
+h1. 3rd party elements used
+
+This behavior comes together with a PHP-script named "Rounded PHP" origined from here:
+"http://sourceforge.net/projects/roundedphp/":http://sourceforge.net/projects/roundedphp/
+You will find all the license and author infomation inside the folder rounded-php.
+
+In addition it borrowed a function from Dean Edward's IE7 framework found here:
+"http://code.google.com/p/ie7-js/":http://code.google.com/p/ie7-js/
+MIT License (http://www.opensource.org/licenses/mit-license.php)
