@@ -5,7 +5,7 @@ Copyright (C) 2010 Christian "Schepp" Schaefer
 
 h1. About "Chroma Corners"
 
-"Chroma Corner" is the name of a new technique to create rounded corners in IE 6 - 8. It uses IE's chroma-filter as a tool to mask away corner areas, which are created as a graphic and which are filled with a solid color. 
+"Chroma Corners" is the name of a new technique to create rounded corners in IE 6 - 8. It uses IE's chroma-filter as a tool to mask away corner areas, which are created as a graphic and which are filled with a solid color. 
 It is and behaves like standard HTML + CSS as opposed to the newer VML-based approches. It gives you more freeness and needs less photoshopping work than older background image based techniques for rounded corners like "Mountain Top" or "Sliding Doors".
 
 h1. Usage
@@ -67,7 +67,7 @@ In order for this technique to work, the behavior will apply _position: relative
 
 If you use solid borders on your element, the element will be set to a fixed width. This width is exactly the width it has when the behavior kicks in. So if you have a fluid layout the width won't adapt to changes in layout.
 
-_*Note:* This is planned to get fixed in a future version._
+_*Note:* This is planned to get fixed in a future version (if possible)._
 
 
 h1. System Requirements
