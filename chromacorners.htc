@@ -2,7 +2,6 @@
 <attach event="onpropertychange" onevent="checkPropertyChange()" />
 <attach event="ondetach" onevent="restore()" />
 <attach event="onresize" for="window" onevent="resize()" />
-<!--<attach event="onresize" for="window" onevent="restore();init()" />-->
 <script type="text/javascript">
 //<![CDATA[
 
@@ -306,7 +305,7 @@ function init(){
 		if(IE67 && position == "static") element.runtimeStyle.position = 'relative';
 		element.runtimeStyle.zoom = '1';
 		// Assign chroma filter. The color is not exactly cyan/#00FFFF as the rounded.php-script returns #04FEFC because of GIF-palette.
-		element.runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.Chroma(color="#04FEFC") ' + element.style.filter;
+		element.style.filter = 'progid:DXImageTransform.Microsoft.Chroma(color="#04FEFC") ' + element.currentStyle.filter;
 		// Create helper elements
 		element.innerHTML = '<' + tag + '><' + tag + '><' + tag + '><' + tag + '><' + tag + '>' + element.innerHTML + '</' + tag + '></' + tag + '></' + tag + '></' + tag + '></' + tag + '>';
 		
