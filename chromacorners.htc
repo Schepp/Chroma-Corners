@@ -1,7 +1,7 @@
 <component>
 <attach event="onpropertychange" onevent="checkPropertyChange()" />
 <attach event="ondetach" onevent="restore()" />
-<attach event="onresize" for="window" onevent="resize()" />
+//<attach event="onresize" for="window" onevent="resize()" />
 <script type="text/javascript">
 //<![CDATA[
 

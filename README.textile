@@ -65,10 +65,6 @@ h1. Caveats
 
 In order for this technique to work, the behavior will apply _position: relative;_ to the to be rounded element. Keep that in mind when absolutely positioning children of the rounded one. 
 
-If you use solid borders on your element, the element will be set to a fixed width. This width is exactly the width it has when the behavior kicks in. So if you have a fluid layout the width won't adapt to changes in layout.
-
-_*Note:* This is planned to get fixed in a future version (if possible)._
-
 
 h1. System Requirements
 
